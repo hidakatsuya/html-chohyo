@@ -10,7 +10,7 @@
 
 ## Presentation
 
-URL here.
+https://speakerdeck.com/hidakatsuya/frontend-study-group-in-sannin-3rd (Speaker Deck)
 
 ## Usage
 
