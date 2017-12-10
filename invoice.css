@@ -1,0 +1,109 @@
+p {
+  padding: 0;
+}
+
+.invoice {
+  padding: 70px 50px 50px 50px;
+  font-size: 13px;
+}
+
+.invoice .header {
+  margin-bottom: 40px;
+}
+
+.invoice .details {
+  margin-bottom: 50px;
+}
+
+.invoice .header .meta p {
+  text-align: right;
+}
+
+.invoice h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.invoice .recipients-sender {
+  display: flex;
+}
+
+.invoice .sender {
+  width: 45%;
+}
+
+.invoice .recipients {
+  width: 55%;
+}
+
+.invoice .sender .sender-logo img {
+  max-width: 70%;
+}
+
+.invoice .recipients .recipient-name {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.invoice .recipients .message {
+  margin: 15px 0;
+}
+
+.invoice .recipients .total-amount {
+  display: flex;
+  width: 80%;
+  font-size: 17px;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.invoice .sender .sender-logo {
+  margin-bottom: 20px;
+}
+
+.invoice .sender .sender-name {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.invoice .sender .sender-address {
+  font-size: 12px;
+}
+
+.invoice .details table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 250px;
+}
+
+.invoice .details th {
+  border: 1px solid #000;
+  font-size: 14px;
+  background-color: #d9d8d8;
+}
+
+.invoice .details td {
+  border: 1px solid #000;
+  padding: 0 10px;
+}
+
+.invoice .details .name {
+  width: 50%;
+}
+
+.invoice .details .quantity {
+  text-align: right;
+}
+
+.invoice .details .unit-price {
+  text-align: right;
+}
+
+.invoice .details .amount {
+  text-align: right;
+}
+
+.invoice .details .blank {
+  border: 0
+}

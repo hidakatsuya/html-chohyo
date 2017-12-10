@@ -1,0 +1,57 @@
+/* 請求書スタイル */
+@import url("invoice.css");
+
+body {
+  margin: 0;
+}
+
+.sheet {
+  /* ページ（シート）毎に改ページする */
+  page-break-after: always;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 用紙サイズに合わせてシートのサイズを定義 */
+.A3 .sheet {
+  width: 297mm;
+  /* 用紙サイズちょうどだと、なぜか溢れてしまうので 1mm ほど小さくする */
+  height: 419mm; /* 420mm */
+}
+
+.A4 .sheet {
+  width: 210mm;
+  height: 296mm; /* 297mm */
+}
+
+.A5 .sheet {
+  width: 148mm;
+  height: 209mm; /* 210mm */
+}
+
+@page {
+  /*
+   * 余白を0にすると、ブラウザが勝手に印字するヘッダーとかを削除できる。
+   * ただし、Chrome/Firefox のみ
+   */
+  margin: 0;
+}
+
+@media print{
+  .sheet {
+    /* 背景を印字できるようにする。ただし Chrome のみ */
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+/* プレビュー画面スタイル */
+@media screen {
+  body {
+    background: #eee;
+  }
+  .sheet {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    margin: 5mm auto;
+  }
+}
