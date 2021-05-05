@@ -15,9 +15,9 @@ https://speakerdeck.com/hidakatsuya/frontend-study-group-in-sannin-3rd (Speaker 
 ## Usage
 
  1. index.html をブラウザで開く
- 2. Cmd+P とかで印刷する
+ 2. Cmd+P などで印刷ダイアログを開き印刷する
 
-## Change paper size
+## Changing the paper size
 
 index.html の
 
